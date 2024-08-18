@@ -1,0 +1,34 @@
+name: SuperWarp
+description: A fully personalised warp system!
+version: 4.0
+main: net.ddns.superrobs.Main
+api-version: '1.21'
+author: SuperRobs
+commands:
+  setwarp:
+    description: set a warp-point to your current location
+    usage: /setwarp <name> [category]
+  warp:
+    description: warp to an existing warp point
+    usage: /warp <name> [category]
+  warplist:
+    description: lists all warps available to you
+    usage: /warplist [category]
+  delwarp:
+    description: deletes the specified warp point
+    usage: /delwarp <name>
+  addcategory:
+    description: adds a new category
+    usage: /addcategory <name> [player|public|permission|auto]
+  deletecategory:
+    description: deletes an existing category
+    usage: /deletecategory <name>
+  categorylist:
+    description: lists all categories
+    usage: /categorylist
+  editcategorytype:
+    description: changes a categories type
+    usage: /editcategorytype <name> [new type]
+  backup:
+    description: initiate a backup of the warpmap
+    usage: /backup

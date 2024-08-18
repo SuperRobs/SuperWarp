@@ -1,0 +1,20 @@
+Permission Overview:
+* is an endpoint (an actually used permission)
+//for comments
+
+superwarp
+    .categories
+        .create*
+        .list*
+        .delete*
+        .edittype*
+        .read //allows seeing specific categories via CategoryList, as well as warping to all points in those Categories
+            .<name>* //public and auto-applied categories are automatically readable, this means other categories are
+                        always accessible
+        .manage //allows deleting and editing the category, setting and deleting warps in it, does not automatically
+            .<name>* //make it readable (so it is possible to have editing rights for a category you cannot see)
+    .warp*
+    .set*
+    .del*
+    .list*
+    .backup*
